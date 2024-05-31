@@ -1,0 +1,163 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Fraunces', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-direction: column;
+}
+
+.product__card {
+    background-color: white;
+    border-radius: 0.7em;
+    margin: 5em auto;
+    border: 2px solid rgba(0, 0, 0, 0);
+	max-width: 41em;
+    height: auto;
+}
+
+.product__img {
+    width: 100%;
+    height: 100%;
+}
+
+.product__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.7em;
+}
+
+.product__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.5em;
+    background-color: white;
+    width: 100%;
+    height: max-content;
+    border-radius: 0.7em;
+}
+
+.name {
+    margin-bottom: 1em;
+    letter-spacing: 5px;
+    font-family: 'Montserrat';
+}
+
+.product__title {
+    font-size: 2em;
+    margin-bottom: 1em;
+    font-weight: 800;
+}
+
+.product__desc {
+    color: hsl(212, 21%, 14%);
+    font-family: 'Montserrat';
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-top: 1.3em;
+    margin-bottom: 1em;
+}
+
+.product__price {
+    font-size: 3em;
+    color: #3d8168;
+}
+
+.product__price__disc {
+    padding-left: 10px;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.cart__btn {
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 7px;
+    border: 1px solid white;
+    padding: 15px 10px 15px;
+}
+
+.bi-cart3 {
+    margin-right: 0.5em;
+    background-color: #3d8168;
+}
+
+@media screen and (min-width: 1440px) {
+    .mobile {
+        display: none;
+    }
+
+	.product__title__mobile {
+		display: none;
+	}
+
+    .product__card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 41em;
+        height: auto;
+        margin: 10em 10em;
+    }
+
+    .product__img img {
+        border-top-left-radius: 0.7em;
+        border-bottom-left-radius: 0.7em;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 1439px) {
+    .desktop {
+        display: none;
+    }
+
+	.product__title {
+		display: none;
+	}
+
+    .product__card {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        max-height: 40em;
+        margin: 5em 1em;
+		border: 0.5px solid rgba(0, 0, 0, 0);
+    }
+
+    .product__img img {
+        border-top-right-radius: 0.7em;
+    }
+
+	.product__desc {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+
+	.attribution {
+		display: none;
+	}
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

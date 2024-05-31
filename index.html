@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="product__card">
+    <div class="product__img">
+      <img class="desktop" src="./images/image-product-desktop.jpg" alt="Perfume">
+      <img class="mobile" src="./images/image-product-mobile.jpg" alt="Perfume">
+    </div>
+    <div class="product__content">
+      <p class="name">Perfume</p>
+
+      <h1 class="product__title">Gabrielle 
+        <br>Essence Eau 
+        <br>De Parfum</h1>
+
+      <h1 class="product__title__mobile">
+        Gabrielle Essence 
+        <br>Eau De Parfum</h1>
+
+      <p class="product__desc">A floral, solar and voluptuous 
+        <br>interpretation composed by Olivier Polge, 
+      Perfumer-Creator for the House of CHANEL.</p>      
+
+      <div class="price">
+        <p class="product__price">$149.99</p>
+        <p class="product__price__disc">$169.99</p>
+      </div>
+      
+      <button class="cart__btn"><i class="bi bi-cart3"></i>Add to Cart</button>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/andika04kd">Andika Pratama</a>.
+  </div>
+</body>
+</html>
